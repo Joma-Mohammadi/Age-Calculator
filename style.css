@@ -101,9 +101,7 @@ small {
   right: 0;
   top: -35px;
   cursor: pointer;
-  background-image: url("./images/icon-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 .submit_btn:hover {
