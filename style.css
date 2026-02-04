@@ -1,0 +1,150 @@
+/* Bold */
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(0, 0%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  padding: 1rem;
+  
+}
+
+.container {
+  background: white;
+  max-width: 650px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 20px 20px 150px 20px;
+}
+
+/* Form inputs */
+.form_container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+input {
+  font-weight: bold;
+  width: 120px;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+}
+
+small {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 67%);
+  margin-top: 0.2rem;
+}
+
+/* Submit section */
+.submit_block {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.submit_block hr {
+  border: none;
+  border-top: 1px solid hsl(0, 0%, 86%);
+}
+
+.submit_btn {
+  background: hsl(259, 100%, 65%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: -35px;
+  cursor: pointer;
+  background-image: url("./images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.submit_btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+/* Output */
+.output h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.output span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form_container {
+    gap: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .submit_block {
+    margin-top: 60px;
+  }
+
+  .submit_btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .output {
+    margin-top: 50px;
+  }
+  .output h1 {
+    font-size: 2.5rem;
+  }
+}
